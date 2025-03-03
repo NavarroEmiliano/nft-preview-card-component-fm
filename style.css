@@ -1,6 +1,7 @@
 :root {
     --soft-blue: #7f9dd1;
     --cyan: #00fff7;
+    --cyan-transparent: #00fff750;
     --very-dark-blue-main: #0D192C;
     --very-dark-blue-card: #15263F;
     --very-dark-blue-line: #2f415b;
@@ -34,9 +35,37 @@ img {
 }
 
 .card__img {
-    border-radius: 8px;
+    display: flex;
+    position: relative;
     margin-block-end: 24px;
 }
+
+.card__img > img {
+    border-radius: 8px;
+    
+}
+
+.card__view {
+    display: grid;
+    position: absolute;
+    place-content: center;
+    inline-size: 100%;
+    block-size: 100%;
+    top: 0;
+    background-color: var(--cyan-transparent);
+    border-radius: 8px;
+    opacity: 0;
+}
+
+.card__view img {
+    inline-size: 48px;
+    block-size: 48px;
+}
+
+.card__view:hover {
+    opacity: 1;
+}
+
 
 .card__title {
     font-size: 1.5rem;

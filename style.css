@@ -1,5 +1,5 @@
 :root {
-    --soft-blue: #7f9dd1;
+    --soft-blue: #8BACD9;
     --cyan: #00fff7;
     --cyan-transparent: #00fff750;
     --very-dark-blue-main: #0D192C;
@@ -77,4 +77,10 @@ img {
 .card__title:hover {
     color: var(--cyan);
     cursor: pointer;
+}
+
+.card__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--soft-blue);
 }

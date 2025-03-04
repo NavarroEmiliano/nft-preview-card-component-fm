@@ -95,7 +95,7 @@ img {
     border-block-end: 1px solid var(--very-dark-blue-line);
 }
 
-.card__data div {
+.card__value {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -107,6 +107,37 @@ img {
     inline-size: 11px;
 }
 
+.card__time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--soft-blue);
+}
+
 .card__time>img {
     inline-size: 16px;
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--soft-blue);
+    font-size: 15px;
+}
+
+.card__author img {
+    inline-size: 33px;
+    block-size: 33px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.card__name {
+    color: var(--white);
+}
+
+.card__name:hover {
+    cursor: pointer;
+    color: var(--cyan);
 }

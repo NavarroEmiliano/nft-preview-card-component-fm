@@ -69,9 +69,10 @@ img {
 
 
 .card__title {
-    font-size: 1.5rem;
+    font-size: 22px;
     color: var(--white);
     margin-block-end: clamp(12px, 3vw, 16px);
+    font-weight: 600;
 }
 
 .card__title:hover {
@@ -84,6 +85,8 @@ img {
     font-weight: 300;
     color: var(--soft-blue);
     margin-block-end: clamp(16px, 3vw, 24px);
+    line-height: 1.444;
+
 }
 
 .card__data {
@@ -123,7 +126,8 @@ img {
     align-items: center;
     gap: 16px;
     color: var(--soft-blue);
-    font-size: 15px;
+    font-size: clamp(15px, 3vw, 16px);
+    margin-block-end: 8px;
 }
 
 .card__author img {

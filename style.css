@@ -4,7 +4,7 @@
     --cyan-transparent: #00fff750;
     --very-dark-blue-main: #0D192C;
     --very-dark-blue-card: #15263F;
-    --very-dark-blue-line: #2f415b;
+    --very-dark-blue-line: #2E405A;
     --white: #ffffff;
 }
 
@@ -40,9 +40,9 @@ img {
     margin-block-end: 24px;
 }
 
-.card__img > img {
+.card__img>img {
     border-radius: 8px;
-    
+
 }
 
 .card__view {
@@ -83,4 +83,30 @@ img {
     font-size: 18px;
     font-weight: 300;
     color: var(--soft-blue);
+    margin-block-end: clamp(16px, 3vw, 24px);
+}
+
+.card__data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block-end: clamp(16px, 3vw, 24px);
+    margin-block-end: 16px;
+    border-block-end: 1px solid var(--very-dark-blue-line);
+}
+
+.card__data div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.card__value>img {
+    inline-size: 11px;
+}
+
+.card__time>img {
+    inline-size: 16px;
 }
